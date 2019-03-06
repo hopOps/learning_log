@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'learning_log',
-        'USER': 'learning_log',
-        'PASSWORD': 'learning_log',
-        'HOST': 'localhost',
+        'NAME': '${DATABASE_NAME}',
+        'USER': '${DATABASE_USER}',
+        'PASSWORD': '${POSTGRESQL_PASSWORD}',
+        'HOST': '${DATABASE_SERVICE_NAME}',
         'PORT': '5432',
     }
 }
