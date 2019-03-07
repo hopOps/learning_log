@@ -80,15 +80,10 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+from . import database
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '${DATABASE_NAME}',
-        'USER': '${DATABASE_USER}',
-        'PASSWORD': '${POSTGRESQL_PASSWORD}',
-        'HOST': '${DATABASE_SERVICE_NAME}',
-        'PORT': '5432',
-    }
+    'default': database.config()
 }
 
 
