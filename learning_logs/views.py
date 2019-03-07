@@ -98,5 +98,3 @@ def edit_entry(request, entry_id):
     return render(request, 'learning_logs/edit_entry.html', context)
 
 
-def health(request):
-	return HttpResponse(PageView.objects.count())
