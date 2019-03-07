@@ -23,4 +23,7 @@ urlpatterns = [
 
     # Page for editing an entry
     path('edit_entry/?P<entry_id>\d+)/$', views.edit_entry, name='edit_entry'),
+	
+	# Page for Health Check
+    path('', views.health, name='health'),
 ]
