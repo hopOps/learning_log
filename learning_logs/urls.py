@@ -24,4 +24,7 @@ urlpatterns = [
     # Page for editing an entry
     path('edit_entry/?P<entry_id>\d+)/$', views.edit_entry, name='edit_entry'),
 
+    # Page for editing an entry
+    path('health/', views.health, name='health'),
+
 ]

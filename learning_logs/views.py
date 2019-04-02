@@ -98,3 +98,7 @@ def edit_entry(request, entry_id):
     return render(request, 'learning_logs/edit_entry.html', context)
 
 
+def health(request):
+    """This is just the health check for the application learning logs"""
+    return render(request, 'learning_logs/index.html')
+
